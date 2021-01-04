@@ -1,0 +1,5 @@
+include ':libbase'
+include ':moduletow'
+include ':moduleone'
+include ':app'
+rootProject.name = "ARouterDemo"

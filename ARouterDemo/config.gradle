@@ -1,0 +1,26 @@
+ext {
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.3",
+            minSdkVersion    : 16,
+            targetSdkVersion : 29,
+            versionCode      : 1,
+            versionName      : "1.0",
+
+    ]
+    version = [
+            arouterAnnotationVsersion: "1.2.2",
+            arouterApiVsersion       : "1.5.1",
+            viewmodelVersion       : "2.2.0",
+            livedataVersion       : "2.2.0",
+            gsonVersion       : "2.8.6"
+    ]
+
+    dependencies = [
+            "aruoterannotationProcessor": "com.alibaba:arouter-compiler:${version["arouterAnnotationVsersion"]}",
+            "aruoterapi"                : "com.alibaba:arouter-api:${version["arouterApiVsersion"]}",
+            "livedata"                : "androidx.lifecycle:lifecycle-livedata-ktx:${version["livedataVersion"]}",
+            "viewmodel"                : "androidx.lifecycle:lifecycle-viewmodel-ktx:${version["viewmodelVersion"]}",
+            "gson"                : "com.google.code.gson:gson:${version["gsonVersion"]}"
+    ]
+}
